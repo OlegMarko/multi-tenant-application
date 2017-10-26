@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $venture = 'ua';
+
+    return view('welcome', compact('venture'));
 });

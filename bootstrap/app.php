@@ -15,6 +15,8 @@ $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );
 
+$app->alias(\App\Library\Venture::class, 'venture');
+
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces
